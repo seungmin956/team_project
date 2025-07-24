@@ -3,6 +3,11 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
+st.write("Current working directory:", os.getcwd())
+st.write("Files in current directory:", os.listdir("."))
+if os.path.exists("data"):
+    st.write("Files in data directory:", os.listdir("data"))
+
 # st.sidebar.write("🔧 **디버깅 정보**")
 # try:
 #     import components.tab_regulation
